@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plus-minus</title>
+</head>
+
+
+<body>
+    <h2>JavaScript Plus-Minus </h2>
+    <p id="demo"></p>
+
+    <!--Script-->
+    <script>
+        const arr = [-4,3,-9,0,4,1];
+        
+        let numPositivos = 0;
+        let numNegativos = 0;
+        let numZero = 0;
+        let tamArray = arr.length;
+
+        function plusMinus (arr) {
+        
+            arr.forEach(element => {
+                if(element > 0){
+                    numPositivos++;
+                }else if(element < 0){
+                    numNegativos++;
+                }else{
+                    numZero++;
+                }
+            });
+
+        }
+
+        plusMinus(arr);
+
+        let proporcaoP = numPositivos/tamArray;
+        let proporcaoN = numNegativos/tamArray;
+        let proporcaoZ = numZero/tamArray;
+
+        //console.log(`${proporcaoP.toFixed(6)} ${proporcaoN.toFixed(6)} ${proporcaoZ.toFixed(6)}`);
+
+        //document.getElementById("demo").innerHTML = proporcaoP.toFixed(6) + proporcaoN.toFixed(6) + proporcaoZ.toFixed(6);
+
+    </script>
+
+</body>
+</html>
