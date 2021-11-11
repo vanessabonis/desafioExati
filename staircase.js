@@ -1,12 +1,22 @@
 var n = 4;
 
+//numEspaços - numHashTags
+//     3     -     1
+//     2     -     2
+//     1     -     3
+//     0     -     4
+
+//numEspacos + numHashTags = n
+
 function stairCase(n){
-    for (let i = 0; i<n; i++){
+    for (var i = 0; i<n; i++){
         let str = "";
-        for(let j = 0; j<n-i-1; j++){
+        //print Espaços
+        for(var numSpaces=0; numSpaces<n-i-1; numSpaces++){
             str += " ";
         }
-        for (let k=0; k<i+1; k++){
+        //print #
+        for (var numHashTags=0; numHashTags<i+1; numHashTags++){
             str +="#";
         }
 
