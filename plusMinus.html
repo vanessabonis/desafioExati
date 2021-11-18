@@ -5,12 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>plus-minus</title>
+
+    <style>
+        div#res{
+            margin-top: 20px;
+            border-width: medium;
+            border-style: solid;
+            border-color: rgb(68, 189, 52);
+            text-align: center;
+            font: normal 20px Serif;
+        }
+    </style>
 </head>
 
 
 <body>
     <h2>JavaScript Plus-Minus </h2>
-    <div id="res">Resultado <br> </div>
+    <div id="res"> <br> </div>
 
     <!--Script-->
     <script>
@@ -43,7 +54,7 @@
         let proporcaoZ = numZero/tamArray;
 
         
-        res.innerHTML = `${proporcaoP.toFixed(6)} <br> ${proporcaoN.toFixed(6)} <br> ${proporcaoZ.toFixed(6)}`
+        res.innerHTML = `Proporção de números positivos: <strong> ${proporcaoP.toFixed(6)} </strong> <br> Proporção de números negativos: <strong> ${proporcaoN.toFixed(6)} </strong> <br> Proporção de zeros: <strong>${proporcaoZ.toFixed(6)}`
 
 
     </script>
